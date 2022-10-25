@@ -36,6 +36,14 @@ struct ContentView: View {
             }
             Spacer()
             Button(action: {
+                //create an array storing the three image types
+                let slotArray = ["apple", "cherry", "star"]
+                //create variables for each slot that randomly selects image type
+                let slotOneRand = slotArray.randomElement()!
+                
+                //update slots with random selection
+                slotOne = slotOneRand
+                print(slotOneRand)
                 playerScore += 1
 
                 print("Button pressed!")
