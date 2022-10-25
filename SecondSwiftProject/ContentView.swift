@@ -13,7 +13,7 @@ struct ContentView: View {
     @State var slotTwo = "cherry"
     @State var slotThree = "star"
     
-   @State var playerScore = 1050
+   @State var playerScore = 50
     
     var body: some View {
         VStack{
@@ -48,8 +48,22 @@ struct ContentView: View {
                 slotTwo = slotTwoRand
                 slotThree = slotThreeRand
                 
-                print(slotOneRand)
-                playerScore += 1
+                //update score
+                
+                if (slotOneRand & slotTwoRand & slotThreeRand == "cherry"){
+                    playerScore += 10
+                    print("3 Cherries - 10 points!")
+
+                } else if (slotOneRand & slotTwoRand & slotThreeRand == "apple") {
+                    playerScore += 50
+                    print("3 Apples - 50 points!")
+                } else if (slotOneRand & slotTwoRand & slotThreeRand == "star") {
+                    playerScore += 100
+                    print("3 Stars - 100 points!!!")
+                } else {
+                    playerScore -= 10
+                    print("Unlucky, Spin again")
+                }
 
                 print("Button pressed!")
             }, label: {
