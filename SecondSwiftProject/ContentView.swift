@@ -40,9 +40,14 @@ struct ContentView: View {
                 let slotArray = ["apple", "cherry", "star"]
                 //create variables for each slot that randomly selects image type
                 let slotOneRand = slotArray.randomElement()!
-                
+                let slotTwoRand = slotArray.randomElement()!
+                let slotThreeRand = slotArray.randomElement()!
+
                 //update slots with random selection
                 slotOne = slotOneRand
+                slotTwo = slotTwoRand
+                slotThree = slotThreeRand
+                
                 print(slotOneRand)
                 playerScore += 1
 
