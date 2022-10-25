@@ -15,6 +15,7 @@ struct ContentView: View {
             Spacer()
             Text("Credits: 1030")
                 .padding()
+            Spacer()
             HStack {
 
                 Image("apple").resizable().scaledToFit()
@@ -22,6 +23,11 @@ struct ContentView: View {
                 Image("apple").resizable().scaledToFit()
 
             }
+            Spacer()
+            Button("Spin") {
+                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+            }
+            Spacer()
         }
        
     }
