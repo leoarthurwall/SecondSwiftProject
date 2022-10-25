@@ -13,7 +13,7 @@ struct ContentView: View {
     var slotTwo = "cherry"
     var slotThree = "star"
     
-    var playerScore = 1050
+   @State var playerScore = 1050
     
     var body: some View {
         VStack{
@@ -36,6 +36,8 @@ struct ContentView: View {
             }
             Spacer()
             Button("Spin") {
+                playerScore += 1
+
                 print("Button pressed!")
             }
             .padding(.horizontal, 30.0).padding(.vertical, 10.0)
