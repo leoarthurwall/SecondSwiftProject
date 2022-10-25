@@ -9,11 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack{
-            Text("Hello, world!")
+        VStack{
+            Text("SwiftUI Slots!")
                 .padding()
-            Text("I'm Leo!")
+            Spacer()
+            Text("Credits: 1030")
                 .padding()
+            HStack {
+
+                Image("apple").resizable().scaledToFit()
+                Image("apple").resizable().scaledToFit()
+                Image("apple").resizable().scaledToFit()
+
+            }
         }
        
     }
