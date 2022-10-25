@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack{
             Text("SwiftUI Slots!")
+                .font(.system(size: 26, weight: .bold, design: .default))
                 .padding()
             Spacer()
             Text("Credits: 1030")
