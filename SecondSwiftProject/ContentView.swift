@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var slotOne = "apple"
+    var slotTwo = "apple"
+    var slotThree = "apple"
+    
+    var playerScore = 1000
+    
     var body: some View {
         VStack{
             Text("SwiftUI Slots!")
