@@ -50,21 +50,24 @@ struct ContentView: View {
                 
                 //update score
                 
-                if (slotOneRand & slotTwoRand & slotThreeRand == "cherry"){
-                    playerScore += 10
-                    print("3 Cherries - 10 points!")
-
-                } else if (slotOneRand & slotTwoRand & slotThreeRand == "apple") {
+                if (slotOneRand == "cherry" && slotTwoRand == "cherry" && slotThreeRand == "cherry"){
                     playerScore += 50
-                    print("3 Apples - 50 points!")
-                } else if (slotOneRand & slotTwoRand & slotThreeRand == "star") {
-                    playerScore += 100
-                    print("3 Stars - 100 points!!!")
+                    print("3 Cherries - 50 points!")
+
+                } else if (slotOneRand == "apple" && slotTwoRand == "apple" && slotThreeRand == "apple") {
+                    playerScore += 80
+                    print("3 Apples - 80 points!")
+                } else if (slotOneRand == "star" && slotTwoRand == "star" && slotThreeRand == "star") {
+                    playerScore += 150
+                    print("3 Stars - 150 points!!!")
                 } else {
                     playerScore -= 10
                     print("Unlucky, Spin again")
                 }
 
+                if (playerScore <= 0){
+                    print("Game over")
+                }
                 print("Button pressed!")
             }, label: {
                 Text("Spin")
