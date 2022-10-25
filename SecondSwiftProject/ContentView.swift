@@ -25,8 +25,13 @@ struct ContentView: View {
             }
             Spacer()
             Button("Spin") {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                print("Button pressed!")
             }
+            .padding(.horizontal, 30.0).padding(.vertical, 10.0)
+            .background(.red)
+            .foregroundColor(.white)
+            .clipShape(Capsule())
+
             Spacer()
         }
        
