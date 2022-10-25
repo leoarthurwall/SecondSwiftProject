@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var slotOne = "apple"
-    var slotTwo = "cherry"
-    var slotThree = "star"
+    @State var slotOne = "apple"
+    @State var slotTwo = "cherry"
+    @State var slotThree = "star"
     
    @State var playerScore = 1050
     
