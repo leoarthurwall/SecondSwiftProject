@@ -35,11 +35,14 @@ struct ContentView: View {
 
             }
             Spacer()
-            Button("Spin") {
+            Button(action: {
                 playerScore += 1
 
                 print("Button pressed!")
-            }
+            }, label: {
+                Text("Spin")
+                
+            })
             .padding(.horizontal, 30.0).padding(.vertical, 10.0)
             .background(.red)
             .foregroundColor(.white)
