@@ -10,10 +10,10 @@ import SwiftUI
 struct ContentView: View {
     
     var slotOne = "apple"
-    var slotTwo = "apple"
-    var slotThree = "apple"
+    var slotTwo = "cherry"
+    var slotThree = "star"
     
-    var playerScore = 1000
+    var playerScore = 1050
     
     var body: some View {
         VStack{
@@ -21,14 +21,17 @@ struct ContentView: View {
                 .font(.system(size: 26, weight: .bold, design: .default))
                 .padding()
             Spacer()
-            Text("Credits: 1030")
-                .padding()
+            HStack {
+                Text("Credits:")
+                Text(String(playerScore))
+            }
+            
             Spacer()
             HStack {
 
-                Image("apple").resizable().scaledToFit()
-                Image("apple").resizable().scaledToFit()
-                Image("apple").resizable().scaledToFit()
+                Image(slotOne).resizable().scaledToFit()
+                Image(slotTwo).resizable().scaledToFit()
+                Image(slotThree).resizable().scaledToFit()
 
             }
             Spacer()
