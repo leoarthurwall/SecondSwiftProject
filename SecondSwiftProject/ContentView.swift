@@ -24,6 +24,7 @@ struct ContentView: View {
             HStack {
                 Text("Credits:")
                 Text(String(playerScore))
+                    .fontWeight(.semibold)
             }
             
             Spacer()
